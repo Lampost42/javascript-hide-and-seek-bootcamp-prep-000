@@ -5,8 +5,11 @@ function nestedTarget() {
   return(document.querySelector('#nested .target'))
 }
 function increaseRankBy(n) {
-  var list = document.querySelector('.ranked-list').querySelectorAll('li')
+  var list = document.querySelectorAll('.ranked-list')
   for(var i = 0; i < list.length; i++){
-    list[i].innerText = parseInt(list[i].innerHTML) + n;
+    list[i] = document.querySelectorAll('li')
+  for(var a = 0; a < list.length; a++){
+    list[i][a].innerHTML = parseInt(list[i][a].innerHTML) + n;
+  }
   }
 }
