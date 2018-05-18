@@ -9,7 +9,7 @@ function increaseRankBy(n) {
   for(var i = 0; i < list.length; i++){
     list[i] = document.querySelectorAll('li')
   for(var a = 0; a < list[i].length; a++){
-    list[i][a].innerText = parseInt(list[i][a].innerText) + n;
+    list[i][a].innerHTML = parseInt(list[i][a].innerHTML) + n;
   }
   }
 }
